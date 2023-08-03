@@ -43,7 +43,7 @@ fun processFile(file: File,map:HashMap<String,Int>) {
 
     occurance.filter { it.value > 1 }.forEach { (word, count) ->
         println("$word: $count")
-
+    }
     val score = ob.sumOf{
         map.getOrDefault(it, 0)
     }
